@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vida Saludable: ejercicios, rutinas y consejos de alimentación para mejorar tu salud,
+        fuerza y bienestar día a día.">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Vida Saludable</title>
+</head>
+
+<body>
+    <header class="banner">
+
+        <div class="titulo-hora">
+            <h1>Vida Saludable</h1>
+            <div id="horaActual"></div>
+        </div>
+
+        <nav class="menu">
+            <a data-page="inicio" href="inicio.html" class="link">Inicio</a>
+            <select id="musculos" onchange="if(this.value) location=this.value;" class="link">
+                <option value="" selected disabled hidden>Músculos</option>
+                <option value="gluteos.html" data-page="gluteos">Glúteos</option>
+                <option value="cuadriceps.html" data-page="cuadriceps">Cuádriceps</option>
+                <option value="espalda.html" data-page="espalda">Espalda</option>
+                <option value="femoral.html" data-page="femoral">Femorales/Isquiotibiales</option>
+            </select>
+            <a data-page="rutina" href="rutina.html" class="link">Rutina <span class="contenedor-badge">Mas
+                    visto</span></a>
+            <select id="alimentacion" onchange="if(this.value) location=this.value;">
+                <option value="" selected disabled hidden>Alimentación</option>
+                <option value="alimentacion.html" data-page="alimentacion">Alimentación</option>
+                <option value="preGym.html" data-page="preGym">¿Qué comer antes de entrenar?</option>
+                <option value="postGym.html" data-page="postGym">¿Qué comer después de entrenar?</option>
+            </select>
+        </nav>
+    </header>
+    <main class="aside">
+
+        <div id="mainInicio">
+            <section id="intro">
+                <div class="saludo">
+                    <h2 id="salida"></h2>
+                    <button id="btnVisitas" type="button">
+                        Has visitado la página <span id="totalVisitas">0</span> veces
+                    </button>
+                </div>
+                <p class="porcentaje">
+                    En este espacio encontrarás información práctica sobre cada grupo muscular,
+                    los ejercicios más efectivos para fortalecerlo y los alimentos que ayudan a su desarrollo y
+                    recuperación.
+                    Pero además, hablaremos de hábitos que mejoran tu calidad de vida, como el descanso, la nutrición y
+                    la motivación.
+                </p>
+            </section>
+
+            <div class="domBasico">
+                <p>Cambia el color del encabezado: </p>
+                <button id="btnAzul" class="btnDomBasico">Azul</button>
+                <button id="btnRojo" class="btnDomBasico">Rojo</button>
+                <button id="btnVerde" class="btnDomBasico">Verde</button>
+            </div>
+            <section id="acerca">
+            </section>
+            <section id="servicios">
+                <h3>¿Qué te ofrecemos en esta página?</h3>
+                <input id="barraBusqueda" placeholder="Busca un servicio...">
+                <ul id="listaServicios">
+                    <li class="servicio">Ejercicios importantes para cuadriceps</li>
+                    <li class="servicio">Ejercicios importantes para femoral</li>
+                    <li class="servicio">Ejercicios importantes para gluteos</li>
+                    <li class="servicio">Ejercicios importantes para espalda</li>
+                    <li class="servicio">Rutina básica semanal</li>
+                    <li class="servicio">Alimentación adecuada antes de entrenar</li>
+                    <li class="servicio">Alimentación adecuada despues de entrenar</li>
+                </ul>
+            </section>
+        </div>
+        <aside>
+            <h2>Notas rápidas</h2>
+            <form id="formNotas">
+                <input type="text" id="inputNota" placeholder="Escribe una nota..." required>
+                <button id="btnLista">Agregar</button>
+                <ul id="notas"></ul>
+            </form>
+        </aside>
+        <script src="./js/app.js"></script>
+    </main>
+    <footer>
+        <nav aria-label="Enlaces de pie de página">
+            <a href="contactanos.html" class="pieDePagina">Contáctanos</a>
+        </nav>
+        <p>Imágenes tomadas de
+            <a href="https://co.pinterest.com/" target="_blank" rel="noopener noreferrer" class="pieDePagina">
+                Pinterest
+            </a>
+        </p>
+        <p>&copy; 2025 Vida Saludable. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

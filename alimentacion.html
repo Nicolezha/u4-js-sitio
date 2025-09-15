@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la importancia de la alimentación para entrenar: 
+        energía, recuperación, crecimiento muscular y consejos prácticos para antes y después del gym.">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Alimentación</title>
+</head>
+
+<body>
+    <header class="banner">
+        <h1>Alimentación y Entrenamiento</h1>
+        <nav class="menu">
+            <a data-page="inicio" href="inicio.html" class="link">Inicio</a>
+            <select id="musculos" onchange="if(this.value) location=this.value;" class="link">
+                <option value="" selected disabled hidden>Músculos</option>
+                <option value="gluteos.html" data-page="gluteos">Glúteos</option>
+                <option value="cuadriceps.html" data-page="cuadriceps">Cuádriceps</option>
+                <option value="espalda.html" data-page="espalda">Espalda</option>
+                <option value="femoral.html" data-page="femoral">Femorales/Isquiotibiales</option>
+            </select>
+            <a data-page="rutina" href="rutina.html" class="link">Rutina <span class="contenedor-badge">Mas
+                    visto</span></a>
+            <select id="alimentacion" onchange="if(this.value) location=this.value;">
+                <option value="" selected disabled hidden>Alimentación</option>
+                <option value="alimentacion.html" data-page="alimentacion">Alimentación</option>
+                <option value="preGym.html" data-page="preGym">¿Qué comer antes de entrenar?</option>
+                <option value="postGym.html" data-page="postGym">¿Qué comer después de entrenar?</option>
+            </select>
+        </nav>
+    </header>
+    <main class="importancia-alimentacion">
+        <div>
+            <p>
+                La alimentación es tan importante como el entrenamiento. Puedes pasar horas en el gimnasio,
+                pero si tu dieta no es adecuada, los resultados serán mucho más lentos o incluso inexistentes.
+                Una buena nutrición es la base para tener energía, rendir mejor y lograr una verdadera transformación
+                física.
+            </p>
+
+            <article>
+                <h2>¿Por qué es importante la alimentación para quienes entrenan?</h2>
+                <ul>
+                    <li>Aporta la energía necesaria para realizar los ejercicios con intensidad.</li>
+                    <li>Permite la recuperación muscular, reduciendo el dolor y la fatiga.</li>
+                    <li>Contribuye al crecimiento y la tonificación muscular.</li>
+                    <li>Fortalece el sistema inmunológico y mejora el rendimiento general.</li>
+                    <li>Ayuda a mantener un peso saludable y controlar la grasa corporal.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Errores comunes en la alimentación</h2>
+                <ul>
+                    <li>Consumo excesivo de alimentos procesados y azúcares, que aportan calorías vacías y afectan la
+                        salud.</li>
+                    <li>No ingerir suficiente proteína, lo que dificulta la recuperación y el crecimiento muscular.</li>
+                    <li>Saltarse comidas o no comer lo suficiente, lo que puede llevar a la pérdida de masa muscular y
+                        falta de energía.</li>
+                    <li>No hidratarse adecuadamente, lo que afecta el rendimiento y la recuperación.</li>
+                    <li>Depender demasiado de suplementos en lugar de una dieta equilibrada.</li>
+                    <li>Entrenar en exceso y no ver resultados por una mala alimentación.</li>
+                    <li>Fatiga constante y riesgo de lesiones por no nutrir bien el cuerpo.</li>
+                </ul>
+            </article>
+            <section id="video">
+                <h2>Video Recomendado</h2>
+                <p>Para complementar esta información, te recomendamos ver el siguiente
+                    video que explica de manera sencilla y visual la importancia de la alimentación para quienes
+                    entrenan:</p>
+                <figure>
+                    <video controls>
+                        <source src="./media/comer.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                    <figcaption>Video: "Cómo comer para entrenar mejor" – Créditos a su autor original.</figcaption>
+                </figure>
+            </section>
+            <section id="conclusiones">
+                <h2>Conclusión</h2>
+                <p class="hsl">
+                    Una alimentación adecuada es fundamental para maximizar los beneficios del entrenamiento.
+                    Prioriza una dieta balanceada, rica en nutrientes y adaptada a tus necesidades individuales.
+                    Comer bien antes y después del gym marca la diferencia entre simplemente cansarte y realmente
+                    progresar.
+                    Recuerda que la combinación de ejercicio y buena nutrición es la clave para alcanzar tus objetivos
+                    de salud y fitness.
+                </p>
+            </section>
+        </div>
+        <script src="./js/app.js"></script>
+    </main>
+    <footer>
+        <nav aria-label="Enlaces de pie de página">
+            <a href="contactanos.html">Contáctanos</a>
+        </nav>
+        <p>Imágenes tomadas de
+            <a href="https://co.pinterest.com/" target="_blank" rel="noopener noreferrer">
+                Pinterest
+            </a>
+        </p>
+        <p>&copy; 2025 Vida Saludable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

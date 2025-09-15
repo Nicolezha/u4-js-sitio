@@ -1,0 +1,506 @@
+.aside {
+  display: flex;
+  gap: 20px;
+}
+
+#rutina,
+#mainInicio {
+  flex: 3;
+}
+
+body main aside {
+  flex: 1;
+}
+
+.hex span {
+  color: #000000;
+}
+
+#musculos, #alimentacion {
+  background-color: #3f68a5;
+  border-color: #3f68a5;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#alimentacion:hover, #musculos:hover{
+  background-color: #6993d2;
+  border-color: #6993d2;
+  border-radius: 5px;
+}
+
+.link {
+  color: #ffffff;
+  padding-bottom: 2.5px; /*Espacio interno abajo*/
+  text-decoration: none; /*Quita el subrayado de un link*/
+}
+
+.link:hover {
+  background-color: #6993d2;
+  padding: 0px 5px 0px 5px; /*Arriba, derecha, abajo, izquierda*/
+  border-radius: 5px;
+}
+
+/*JavaScript: */
+.saludo, .domBasico {
+  display: flex;
+  flex: 1fr 1fr;
+  gap: 5px;
+}
+
+.domBasico {
+  margin-top: 10px;
+}
+
+.btnDomBasico {
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  border-color: #ffffff;
+  cursor: pointer
+}
+
+#btnAzul {
+  background-color: #0d47a1;
+}
+
+#btnVerde {
+  background-color: #189718;
+}
+
+#btnRojo {
+  background-color: #b02b2b;
+}
+
+.saludo #btnVisitas{
+  min-width: 150px;
+  width: auto;
+}
+
+#btnVisitas{
+  background-color: #0d47a1;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer; /*Cambia el cursor al pasar sobre el botón*/
+}
+
+.titulo-hora {
+  display: flex;
+  align-items: center;
+}
+
+.titulo-hora h1 {
+  margin: 0 auto;
+  flex: 1;
+  text-align: center;
+}
+
+#horaActual {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .titulo-hora {
+    flex-direction: column;
+    align-items: center;
+  }
+  #horaActual {
+    margin-left: 0;
+    margin-top: 8px;
+    align-self: center;
+  }
+  .domBasico {
+    flex-direction: column;
+  }
+}
+
+/* Instruccines que pide la tarea: */
+
+/*Punto 5*/
+* {
+  box-sizing: border-box; /*Incluye padding y border en el tamaño total del elemento*/
+  margin: 0;
+  padding: 0;
+}
+
+/*Punto 6*/
+body {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.6; /*Interlineado o espacio entre lineas*/
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/*Punto 7*/
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  grid-column: span 3; /* ocupa las 3 columnas */
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/*Punto 8*/
+header {
+  background-color: #0d47a1;
+  color: #fff;
+  text-align: center;
+  height: 60px;
+}
+
+/*Punto 9*/
+.menu {
+  border-top: 2px solid #08306b; /*Borde superior de 2px color azul oscuro*/
+  display: flex;
+  flex-direction: row;
+  background-color: #3f68a5;
+  padding: 5px;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+/*Punto 10*/
+.activo {
+  color:#ffffff;
+  background-color: #1a237e;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+
+/*Punto 11*/
+body main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*Punto 12*/
+main p {
+  margin-bottom: 10px;
+}
+
+/*Punto 13*/
+#intro {
+  background-color: #e3f2fd;
+  border: 5px solid #bbdefb; /*Define el tamaño, estilo y color*/
+  padding: 10px;
+}
+
+/*Punto 14*/
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* tres columnas de igual tamaño */
+  gap: 20px; /* espacio entre columnas y filas */
+  margin-bottom: 20px; /*Margen de toda la seccion/clase*/
+}
+
+/*Estilización*/
+.tarjeta {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 2px 2px 5px #0000001a; /*sombra derecha, arriba y difuminado de sombra*/
+  border-radius: 10px;
+}
+
+.tarjeta h3 {
+  color: #0d47a1; /* azul corporativo */
+  margin-bottom: 12px;
+}
+
+.tarjeta strong {
+  color: #1565c0;
+}
+
+/*Punto 15. Hover aplica estilos a un elemento cuando el usuario pasa el cursor sobre él. */
+.tarjeta:hover {
+  transform: translateY(-3px); /*Mueve la tarjeta 3px hacia arriba*/
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /*Aumenta la sombra para dar efecto de elevación*/
+}
+
+/*Punto 16*/
+.hex {
+  color: #001691;
+}
+
+.rgb {
+  color: rgb(99, 0, 156);
+}
+
+.hsl {
+  color: hsl(205, 100%, 30%);
+}
+
+/*Punto 17*/
+.px {
+  font-size: 16px;
+}
+
+.rem {
+  font-size: 1rem; /*1.5 veces el tamaño de la fuente raíz (16px por defecto)*/
+}
+
+.em {
+  font-size: 1em; /*1.2 veces el tamaño de la fuente del elemento padre*/
+}
+
+.porcentaje {
+  font-size: 100%; /*120% del tamaño de la fuente del elemento padre*/
+}
+
+/*Punto 18*/
+
+.cajas {
+  margin: 10px;
+  padding: 10px 25px 30px 50px;
+  border-radius: 5px;
+}
+
+#cajaUno {
+  border: 2px solid #e65100;
+  background-color: #fff3e0;
+}
+#cajaDos {
+  border: 2px solid #00695c;
+  background-color: #e0f2f1;
+}
+
+#cajaTres {
+  border: 2px solid #1a237e;
+  background-color: #e8eaf6;
+  box-sizing: border-box;
+}
+
+/*Punto 19*/
+
+.banner {
+  position: fixed;
+  z-index: 1000; /*Asegura que el header esté por encima de otros elementos*/
+  width: 100%; /*Asegura que el header ocupe todo el ancho de la página*/
+}
+
+main {
+  padding-top: 100px; /*Para que no quede debajo del header*/
+}
+
+/*Punto 20*/
+.contenedor-badge {
+  background-color: #32cd32;
+  color: white;
+  padding: 3px 5px; /*Espaciado interno arriba/abajo y izquierda/derecha*/
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+/*Punto 21*/
+.chip {
+  display: inline-block; /*Para que el span se comporte como un bloque pero en línea*/
+  margin-left: 10px;
+  padding: 4px 10px;
+  color: white;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+#chipCompuesto {
+  background-color: #3f51b5;
+}
+
+#chipAislado {
+  background-color: #009688;
+}
+
+#chipUnilateral {
+  background-color: #ff5722;
+}
+
+/*Punto 22*/
+table {
+  margin-top: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  background-color: #163e79;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #c7c6c6;
+} /*Color de fondo para filas pares*/
+
+tr:hover {
+  background-color: #ffb486;
+} /*Color de fondo al pasar el cursor sobre una fila*/
+
+/*Punto 23*/
+.contacto {
+  display: flex;
+  flex-direction: column; /*Alinea los elementos en columna*/
+  gap: 10px; /*Espacio entre los elementos*/
+  max-width: 540px; /*Ancho máximo del formulario*/
+  margin: 20px auto; /*Centrar el formulario horizontalmente*/
+  background-color: #d0cfcf;
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input,
+#asunto,
+textarea {
+  width: 100%; /*Hace que los campos ocupen todo el ancho del contenedor*/
+  margin-top: 8px; /*Espacio arriba de cada campo*/
+  padding: 10px; /*Espacio interno en los campos*/
+  border: 1px solid #ccc; /*Borde gris claro*/
+  border-radius: 5px; /*Bordes redondeados*/
+  resize: none; /*Evita que el usuario pueda redimensionar el textarea*/
+}
+
+#btnEnviar, #btnLista {
+  background-color: #0d47a1;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer; /*Cambia el cursor al pasar sobre el botón*/
+}
+
+label {
+  font-weight: bold; /*Texto en negrita para los labels*/
+  font-size: 14px;
+}
+
+/*Punto 24*/
+
+/* solo taller de CSS
+.error {
+  border: 2px solid #e53935;
+  background-color: #ffe7e7; 
+}*/
+
+.mensaje-error {
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/*Punto 25*/
+img {
+  max-width: 100%; /*Hace que la imagen no exceda el ancho del contenedor*/
+  height: 200px; /*Altura fija de 300px*/
+  object-fit: cover; /*Corta la imagen para que llene el área sin distorsionar*/
+  border-radius: 5px; /*Bordes redondeados*/
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding: 15px 0 0 28px;
+}
+
+/*Punto 26*/
+@media (max-width: 900px) {
+  .tarjetas {
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+  }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+  }
+  .aside {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    align-items: flex-start;
+  }
+  .tarjetas {
+    grid-template-columns: 1fr; /* 1 columna */
+    gap: 10px;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  body main {
+    padding: 0 5px;
+    max-width: 100%;
+  }
+  .contacto {
+    max-width: 100%;
+    padding: 10px;
+  }
+  img {
+    height: 120px;
+  }
+}
+
+/* Ajustes generales para evitar desbordes */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+
+/*Punto 27*/
+.pieDePagina:focus {
+  outline: 2px solid #0d47a1; /* Borde azul visible */
+  outline-offset: 2px;
+  background-color: #c96100; /* Fondo claro opcional */
+}
+
+/*Punto 28: Todas las imagenes tienen alt.*/
+
+/*Punto 29*/
+footer {
+  width: 100%;
+  background-color: #212121;
+  color: #fff;
+  justify-items: center;
+  padding: 1rem 0;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Post-entrenamiento</title>
+</head>
+
+<body>
+    <header class="banner">
+        <h1>¿Qué comer después de entrenar?</h1>
+        <nav class="menu">
+            <a data-page="inicio" href="inicio.html" class="link">Inicio</a>
+            <select id="musculos" onchange="if(this.value) location=this.value;" class="link">
+                <option value="" selected disabled hidden>Músculos</option>
+                <option value="gluteos.html" data-page="gluteos">Glúteos</option>
+                <option value="cuadriceps.html" data-page="cuadriceps">Cuádriceps</option>
+                <option value="espalda.html" data-page="espalda">Espalda</option>
+                <option value="femoral.html" data-page="femoral">Femorales/Isquiotibiales</option>
+            </select>
+            <a data-page="rutina" href="rutina.html" class="link">Rutina <span class="contenedor-badge">Mas
+                    visto</span></a>
+            <select id="alimentacion" onchange="if(this.value) location=this.value;">
+                <option value="" selected disabled hidden>Alimentación</option>
+                <option value="alimentacion.html" data-page="alimentacion">Alimentación</option>
+                <option value="preGym.html" data-page="preGym">¿Qué comer antes de entrenar?</option>
+                <option value="postGym.html" data-page="postGym">¿Qué comer después de entrenar?</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <section id="descripcion">
+            <h2>Importancia de la nutrición post-entrenamiento</h2>
+            <p>
+                Después de entrenar, tu cuerpo necesita recuperar energía y reparar los músculos.
+                La comida post-entrenamiento es vital para la recuperación, el crecimiento muscular y para evitar el
+                cansancio excesivo.
+            </p>
+        </section>
+        <article id="cajaUno" class="cajas">
+            <h2>Recomendaciones de alimentación post-entrenamiento</h2>
+            <ul>
+                <li>Come dentro de los 30 a 60 minutos después de entrenar.</li>
+                <li>Incluye proteínas de calidad para reparar los músculos.</li>
+                <li>Agrega carbohidratos para reponer la energía gastada.</li>
+                <li>Hidrátate con agua o bebidas con electrolitos si el entrenamiento fue muy intenso.</li>
+            </ul>
+        </article>
+        <article id="cajaDos" class="cajas">
+            <h2>Ejemplos de comidas post-entrenamiento</h2>
+            <ul>
+                <li>Salmón a la plancha con quinoa y espárragos.</li>
+                <li>Pechuga de pollo a la plancha con arroz integral y verduras.</li>
+                <li>Wrap integral de pollo, hummus y vegetales.</li>
+                <li>Lentejas guisadas con huevo duro y ensalada fresca.</li>
+                <li>Ensalada de quinoa con garbanzos, espinacas y tomate.</li>
+                <div class="galeria">
+                    <img src="./img/arrozPechuga.jpg"
+                        alt="Pechuga de pollo a la plancha con arroz integral y verduras.">
+                    <img src="./img/wrap.jpg" alt="Wrap integral de pollo, hummus y vegetales.">
+                    <img src="./img/ensalada.jpg" alt="Ensalada de quinoa con garbanzos, espinacas y tomate.">
+                    <img src="./img/salmon.jpeg" alt="Salmón a la plancha con quinoa y espárragos.">
+                </div>
+            </ul>
+        </article>
+        <article id="cajaTres" class="cajas">
+            <h2>Beneficios de una buena alimentación post-entrenamiento</h2>
+            <ul>
+                <li>Mejora la recuperación muscular y reduce el dolor.</li>
+                <li>Favorece el crecimiento y la reparación de los tejidos musculares.</li>
+                <li>Reabastece las reservas de glucógeno, proporcionando energía para futuras actividades.</li>
+                <li>Ayuda a mantener un equilibrio adecuado de líquidos y electrolitos.</li>
+            </ul>
+        </article>
+        <script src="./js/app.js"></script>
+    </main>
+    <footer>
+        <nav aria-label="Enlaces de pie de página">
+            <a class="activo" href="contactanos.html">Contáctanos</a>
+        </nav>
+        <p>Imágenes tomadas de
+            <a class="activo" href="https://co.pinterest.com/" target="_blank" rel="noopener noreferrer">
+                Pinterest
+            </a>
+        </p>
+        <p>&copy; 2025 Vida Saludable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
